@@ -26,6 +26,7 @@ namespace iSol_Enterprise.Controllers
             {
                 return View();
             }
+            return RedirectToAction("AllUsers", "Dashboard");
         }
 
     }
