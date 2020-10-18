@@ -20,7 +20,7 @@ namespace iSol_Enterprise.Controllers
             var verify =_db.Users.Where(x => x.Email == User.Email && x.Password == User.Password).FirstOrDefault();
             if (verify != null)
             {
-                return View();
+                return View("Dashboard/Index");
             }
             else
             {
