@@ -24,7 +24,7 @@ namespace iSol_Enterprise.Controllers
             }
             else
             {
-                return View();
+                return View("Dashboard/Index");
             }
         }
 
