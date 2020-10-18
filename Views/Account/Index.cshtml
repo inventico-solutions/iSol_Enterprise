@@ -23,7 +23,6 @@
             @using (Html.BeginForm("Index", "Account", FormMethod.Post))
             {
                 <form class="form1">
-                    <p class="error-message">@{var data = ViewBag.Message; }@data.confirm</p>
                     <div class="input-fields">
                         <input class="un" type="text" align="center" placeholder="Email" asp-for="Email">
                         <input class="pass" type="password" align="center" placeholder="Password" asp-for="Password">

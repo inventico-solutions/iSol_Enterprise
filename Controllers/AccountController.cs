@@ -12,7 +12,6 @@ namespace iSol_Enterprise.Controllers
         private readonly ApplicationDbContext _db;
         public IActionResult Index()
         {
-            object confirm = Array("Welcome To iSOl Enterprise","");
             return View();
         }
         [HttpPost]
@@ -21,12 +20,10 @@ namespace iSol_Enterprise.Controllers
             var verify =_db.Users.Where(x => x.Email == User.Email && x.Password == User.Password).FirstOrDefault();
             if (verify != null)
             {
-                ViewData["Message"] = "Login was successfull";
                 return View();
             }
             else
             {
-                ViewData["Message"] = "Wrong Email or Password";
                 return View();
             }
         }
