@@ -22,14 +22,13 @@
             <p class="sign" align="center">SIGN IN</p>
             @using (Html.BeginForm("Index", "Account", FormMethod.Post))
             {
-                <form class="form1">
-                    <div class="input-fields">
-                        <input class="un" type="text" align="center" placeholder="Email" asp-for="Email">
-                        <input class="pass" type="password" align="center" placeholder="Password" asp-for="Password">
-                    </div>
-                    <button class="submit" type="submit">Log In</button>
-                    <p class="forgot" align="right"><a class="f-pass" href="#">Forgot Password?</a></p>
-                    <p class="terms" align="left"><a class="tandc" href="#">Terms & Confitions</a></p>
-                </form>
+        <form class="form1">
+            <div class="input-fields">
+                <input class="un" type="text" align="center" placeholder="Email" asp-for="Email">
+                <input class="pass" type="password" align="center" placeholder="Password" asp-for="Password">
+            </div>
+            <button class="submit" type="submit" align="center">Log In</button>
+            <p align="center"><a class="f-pass" href="#">Forgot Password?</a></p>
+        </form>
             }
             </div>
