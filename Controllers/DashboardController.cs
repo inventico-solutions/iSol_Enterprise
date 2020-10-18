@@ -12,5 +12,11 @@ namespace iSol_Enterprise.Controllers
         {
             return View();
         }
+
+        public IActionResult AllUsers()
+        {
+            return View();
+        }
+
     }
 }
