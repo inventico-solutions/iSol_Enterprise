@@ -1,0 +1,36 @@
+﻿@model iSol_Enterprise.Models.Account
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Authentication.cshtml";
+
+}
+
+    <div class="signup__container">
+        <div class="container__child signup__thumbnail">
+            <div class="company-logo-reg">
+                <!--<img src="~/img/sample.png" class="reg-logo" />-->
+            </div>
+            <div class="thumbnail__content text-center">
+                <p class="welcome-text">WELCOME TO iSOL ENTERPRYZES.</p>
+                <p class="ready-text">REGISTER NOW! AND BE A PART OF iSOL.</p>
+            </div>
+        </div>
+        <div class="container__child signup__form">
+            <div class="company-logo">
+                <img src="~/img/inventico.png" class="company-logo-img" />
+            </div>
+            <p class="sign" align="center">SIGN IN</p>
+            @using (Html.BeginForm("Index", "Account", FormMethod.Post))
+            {
+                <form class="form1">
+                    <p class="error-message">@{var data = ViewBag.Message; }@data.confirm</p>
+                    <div class="input-fields">
+                        <input class="un" type="text" align="center" placeholder="Email" asp-for="Email">
+                        <input class="pass" type="password" align="center" placeholder="Password" asp-for="Password">
+                    </div>
+                    <button class="submit" type="submit">Log In</button>
+                    <p class="forgot" align="right"><a class="f-pass" href="#">Forgot Password?</a></p>
+                    <p class="terms" align="left"><a class="tandc" href="#">Terms & Confitions</a></p>
+                </form>
+            }
+            </div>
