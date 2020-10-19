@@ -16,17 +16,7 @@ namespace iSol_Enterprise.Controllers
         }
         [HttpPost]
         public IActionResult Index(Account User)
-        {/*
-            var verify =_db.Users.Where(x => x.Email == User.Email && x.Password == User.Password).FirstOrDefault();
-            if (verify != null)
-            {
-                return View("Dashboard/Index");
-            }
-            else
-            {
-                return View();
-            }
-    */
+        {
             return RedirectToAction("AllUsers", "Dashboard");
         }
 

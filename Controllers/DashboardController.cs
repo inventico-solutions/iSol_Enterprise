@@ -18,5 +18,9 @@ namespace iSol_Enterprise.Controllers
             return View();
         }
 
+        public IActionResult UpdateUsers()
+        {
+            return View();
+        }
     }
 }

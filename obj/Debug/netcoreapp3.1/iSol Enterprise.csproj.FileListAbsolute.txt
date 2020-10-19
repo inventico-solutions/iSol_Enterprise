@@ -1703,3 +1703,4 @@ C:\Users\ranah\Source\Repos\inventico-solutions\iSol_Enterprise\obj\Debug\netcor
 C:\Users\ranah\Source\Repos\inventico-solutions\iSol_Enterprise\obj\Debug\netcoreapp3.1\iSol Enterprise.dll
 C:\Users\ranah\Source\Repos\inventico-solutions\iSol_Enterprise\obj\Debug\netcoreapp3.1\iSol Enterprise.pdb
 C:\Users\ranah\Source\Repos\inventico-solutions\iSol_Enterprise\obj\Debug\netcoreapp3.1\iSol Enterprise.genruntimeconfig.cache
+C:\Users\Dell\Source\Repos\inventico-solutions\iSol_Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\UpdateUsers.cshtml.g.cs
